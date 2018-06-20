@@ -1,0 +1,64 @@
+body {
+    font-family: "American Typewriter";
+}
+
+h2 {
+    color: blue;
+}
+
+.horizontal-flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.horizontal-flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-link {
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-primary {
+    width: 100%;
+    max-height: 500px;
+}
+
+.image-primary-text {
+    position: absolute;
+    text-align:center;
+    top: 50%;
+    width: 100%;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.headshot-container {
+    display: flex;
+    justify-content: center;
+}
+.headshot {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+}
+
+.footer {
+    background: #525d68;
+}
+
+.contact-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
