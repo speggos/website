@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Spencer Cox - Software Developer</title>
 
+    <link rel="icon" href="resources/images/favicon.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
     <!--
-    Hey! You're a curious one...checking my source code
+    Hey! You're a curious one...yep here's the source code
     Why not say hi? My email is spencercoxcs@gmail.com
     -->
 </head>
@@ -16,86 +18,123 @@
 <body>
 
     <div class="container horizontal-flex-center">
-        <div class="nav-link">Home</div>
-        <div class="nav-link">About Me</div>
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#contact">Contact</a>
     </div>
 
-    <div class="image-container mb-5">
-        <img src="./resources/images/nature.jpg" class="image-primary">
-        <div class="image-primary-text">
-            <h1>Spencer Cox</h1>
-            <h3>Software Developer</h3>
+    <a name="home">
+        <div class="image-container mb-4">
+            <img src="./resources/images/nature.jpg" class="image-primary">
+            <div class="image-primary-text">
+                <h1>Spencer Cox</h1>
+                <h1>Software Developer</h1>
+            </div>
         </div>
-    </div>
+    </a>
 
-    <div class="container text-center">
-        <h3>Hey!</h3>
-        <p>I am a Full Stack Developer with passion for learning and trying new things. I specialize in web and mobile development, where I gather a great deal of satisfaction from stamping my name on a clean, scalable product.</p>
-        <p>I see projects from start to finish, and love establishing long-term relationships with clients.</p>
-        <p>Outside of work, I love exploring my current city of Vancouver, Canada. Hiking, camping, paddle boarding and biking are all things I'm likely to be seen doing.</p>
-        <p>I love meeting other professionals and staying at the cutting edge of this industry. Please don't hesitate to reach out.</p>
-    </div>
+    <a name="about" class="vertical-flex-center">
+        <div class="container text-center mr-5 ml-5" >
+            <h3>Hey!</h3>
+            <p>I am a Full Stack Developer. I make a point every day to be better than I was yesterday. I spend as much time as I can writing quality code, experimenting with HTML/CSS/JS, and understanding current trends and frameworks in the industry. I specialize in web and mobile development, where I gather a great deal of satisfaction from stamping my name on a clean, scalable product.</p>
+            <p>I see projects from start to finish, and love establishing long-term relationships with clients.</p>
+            <p>Outside of work, I love exploring my current city of Vancouver, Canada. Hiking, Camping, Paddle Boarding, and biking are all things I'm likely to be doing.</p>
+            <p>Do you have a project that you're looking for professional help with? Let me know what you're trying to get done - I love meeting other professionals and staying at the cutting edge of this industry.</p>
+
+        </div>
+    </a>
 
     <div class="headshot-container">
         <img src="resources/images/headshot.png" class="headshot text-center">
     </div>
 
-    <div class="container">
-        <div class="text-center mt-5">
-            <h1>My Work</h1>
+    <a name="work">
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>My Work</h1>
+            </div>
+
+            <div class="mt-5 jumbotron">
+                <h2>NDART</h2>
+                <p>The world's only Non-Destructive Audio Resonance Tester. With a team of researchers from BCIT, I created a mobile application capable of measuring the compressive strength of concrete based on the sound emitted from striking a block. Also have created a web-based application to allow non-field users to manage samples collected from the field.</p>
+            </div>
+
+            <div class="mt-4 jumbotron">
+                <h2>Flipbot</h2>
+                <p>A bot which trades cryptocurrencies. Primarily uses arbitrage techniques to take advantage of price discrepancies between various cryptocurrency exchanges.</p>
+            </div>
+
+            <div class="mt-4 jumbotron">
+                <h2>Rounders</h2>
+                <p>A web-based app to allow cryptocurrency traders to hang out, share trading ideas, keep up to date with the latest news, etc. Similar to slack.</p>
+            </div>
+
+            <div class="mt-4 jumbotron">
+                <h2>DnD Character Sheet</h2>
+                <p>A mobile application for tracking character information while playing Dungeons and Dragons (5th edition). Features include: Dice Roller, Battle Tracker, Character Tracker, Notepad.</p>
+            </div>
+
+            <div class="mt-4 jumbotron">
+                <h2>Ted Snider Financial Planner</h2>
+                <p>A web based financial planning application that projects future financial assets based on user data (assets, income, expenses, etc).</p>
+            </div>
+
+            <div class="mt-4 jumbotron">
+                <h2>JakeMUD</h2>
+                <p>A Multi-User Dungeon game, written in C++. Collaborated in a group with three other computer science students. Source code can be found <a href="https://github.com/kvanderlaag/MUDserver/">here</a>
+                </p>
+            </div>
         </div>
+    </a>
 
-        <div class="mt-5 jumbotron">
-            <h2>NDART</h2>
-            <p>An acronym for Non-Destructive Audio Resonance Tester. With a team of researchers from BCIT, I created a mobile application capable of measuring the compressive strength of concrete based on the sound emitted from striking a block.</p>
+    <hr>
+
+    <!--<a name="contact">-->
+        <!--<form action="http://spencercox.ca.s3.amazonaws.com/mail.php" method="POST" enctype="multipart/form-data" class="container text-center vertical-flex-center mb-5">-->
+            <!--<h1 class="text-primary">-->
+                <!--Let's talk!-->
+            <!--</h1>-->
+
+            <!--<div class="form-field col-6">-->
+                <!--Name: <input type="text" name="name" class="form-control" required/> <br>-->
+            <!--</div>-->
+            <!--<div class="form-field col-6">-->
+                <!--Email: <input type="text" name="email" class="form-control" required/> <br>-->
+            <!--</div>-->
+            <!--<div class="form-field col-6">-->
+                <!--How did you hear about me?: <input type="text" name="referral" class="form-control"/> <br>-->
+            <!--</div>-->
+            <!--<div class="form-field col-6">-->
+                <!--Message: <textarea type="text" name="message" class="form-control" required></textarea> <br>-->
+            <!--</div>-->
+            <!--<input type="submit" class="btn btn-primary" value="Send"/>-->
+        <!--</form>-->
+    <!--</a>-->
+
+
+    <a name="footer">
+        <div class="footer">
+            <div class="container horizontal-flex-center pt-2">
+                <a class="contact-button text-center" style="background: #3664a2" href="https://www.facebook.com/Groombo">
+                    <i class="fa fa-facebook" style="color:white"></i>
+                </a>
+
+                <a class="contact-button text-center" style="background: #55acee" href="https://www.facebook.com/Groombo">
+                    <i class="fa fa-twitter" style="color:white"></i>
+                </a>
+
+                <a class="contact-button text-center" style="background: #0077b5" href="https://www.linkedin.com/in/spencercox/">
+                    <i class="fa fa-linkedin" style="color:white"></i>
+                </a>
+            </div>
+
+            <p class="text-center text-white">Email: spencercoxcs@gmail.com</p>
+
+            <p class="text-center text-white mb-0">Copyright © 2018 Spencer Cox</p>
+
         </div>
-
-        <div class="mt-4 jumbotron">
-            <h2>Flipbot</h2>
-            <p>A bot which trades cryptocurrencies. Primarily uses arbitrage techniques to take advantage of price discrepancies between various cryptocurrency exchanges.</p>
-        </div>
-
-        <div class="mt-4 jumbotron">
-            <h2>Rounders</h2>
-            <p>A web-based app to allow cryptocurrency traders to hang out, share trading ideas, keep up to date with the latest news, etc. Similar to slack.</p>
-        </div>
-
-        <div class="mt-4 jumbotron">
-            <h2>DnD Character Sheet</h2>
-            <p>A mobile application for tracking character information while playing Dungeons and Dragons (5th edition). Features include: Dice Roller, Battle Tracker, Character Tracker, Notepad.</p>
-        </div>
-
-        <div class="mt-4 jumbotron">
-            <h2>Ted Snider Financial Planner</h2>
-            <p>A web based financial planning application that projects future financial assets based on user data (assets, income, expenses, etc).</p>
-        </div>
-
-        <div class="mt-4 jumbotron">
-            <h2>JakeMUD</h2>
-            <p>A Multi-User Dungeon game, written in C++. Collaborated in a group with three other computer science students. Source code can be found <a href="https://github.com/kvanderlaag/MUDserver/">here</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="container horizontal-flex-center pt-2">
-            <a class="contact-button text-center" style="background: #3664a2" href="https://www.facebook.com/Groombo">
-                <i class="fa fa-facebook" style="color:white"></i>
-            </a>
-
-            <a class="contact-button text-center" style="background: #55acee" href="https://www.facebook.com/Groombo">
-                <i class="fa fa-twitter" style="color:white"></i>
-            </a>
-
-            <a class="contact-button text-center" style="background: #0077b5" href="https://www.linkedin.com/in/spencercox/">
-                <i class="fa fa-linkedin" style="color:white"></i>
-            </a>
-
-        </div>
-
-        <div class="text-center text-white mt-3 pb-2">Email: spencercoxcs@gmail.com</div>
-
-    </div>
+    </a>
 
 
 </body>
